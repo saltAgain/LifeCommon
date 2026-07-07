@@ -3,8 +3,8 @@ plugins {
     `maven-publish`
 }
 
-group = "gg.hyrivals"
-version = "1.0-SNAPSHOT"
+group = "dev.saltt"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
