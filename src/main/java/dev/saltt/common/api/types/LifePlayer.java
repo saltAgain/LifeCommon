@@ -55,6 +55,7 @@ public class LifePlayer {
             usedIps.add(ip);
             while (usedIps.size() > MAX_HISTORY) usedIps.remove(0);
         }
+
     }
 
     /** @return true — lastJoined always advances, so a login is always a real change to persist. */
