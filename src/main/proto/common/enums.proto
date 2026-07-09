@@ -18,6 +18,5 @@ enum GameStatus {
   IN_PROGRESS = 4;
   ENDING = 5;
   ENDED = 6;
-
   SERVER_CLOSING = 7;
 }
