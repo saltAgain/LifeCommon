@@ -1,4 +1,4 @@
-package dev.saltt.common.api.types.common;
+package dev.saltt.common.api.domains;
 
 import java.util.UUID;
 

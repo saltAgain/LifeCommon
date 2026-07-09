@@ -1,4 +1,4 @@
-package dev.saltt.common.api.types;
+package dev.saltt.common.api;
 
 public enum GameStatus {
     PRE_GAME,

@@ -1,4 +1,4 @@
-package dev.saltt.common.api.types;
+package dev.saltt.common.api.domains;
 
 import java.time.Instant;
 import java.util.ArrayList;

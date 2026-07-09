@@ -1,8 +1,7 @@
-package dev.saltt.common.api.types;
+package dev.saltt.common.api.domains;
 
 import dev.saltt.common.api.LifeGameType;
-import dev.saltt.common.api.types.base.MatchBase;
-import dev.saltt.common.api.types.common.PvPStats;
+import dev.saltt.common.api.domains.gamebase.MatchBase;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -15,17 +14,15 @@ public class SurvivalGamesMatch extends MatchBase {
     private final List<PvPStats> pvpStats = new ArrayList<>();
 
     private SurvivalGamesMatch(UUID matchId, List<UUID> players, LocalTime startTime) {
-        super(matchId, players, startTime);
+        super(matchId, startTime, players);
     }
 
-    /** New match: one fresh PvPStats per player. */
     public static SurvivalGamesMatch create(UUID matchId, List<UUID> players, LocalTime startTime) {
         SurvivalGamesMatch m = new SurvivalGamesMatch(matchId, players, startTime);
         players.forEach(p -> m.pvpStats.add(new PvPStats(p, matchId)));
         return m;
     }
 
-    /** Load from DB: attach persisted stats as-is. */
     public static SurvivalGamesMatch fromStorage(UUID matchId, List<UUID> players,
                                                  LocalTime startTime, List<PvPStats> stats) {
         SurvivalGamesMatch m = new SurvivalGamesMatch(matchId, players, startTime);
