@@ -12,11 +12,12 @@ enum LifeGameType {
 
 enum GameStatus {
   GAME_STATUS_UNSPECIFIED = 0;   // "unset" default — kept as the sentinel
-  PRE_GAME = 1;
-  STARTING = 2;
-  IN_PROGRESS = 3;
-  ENDING = 4;
-  ENDED = 5;
-  SERVER_LOADING = 6;
+  SERVER_LOADING = 1;
+  WAITING_FOR_PLAYERS = 2;
+  STARTING = 3;
+  IN_PROGRESS = 4;
+  ENDING = 5;
+  ENDED = 6;
+
   SERVER_CLOSING = 7;
 }
