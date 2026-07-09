@@ -7,6 +7,7 @@ option java_package = "dev.saltt.common.api.proto";
 option java_multiple_files = true;
 
 message LifePlayerMessage {
+
   string uuid = 1;
   string display_name = 2;
   google.protobuf.Timestamp first_join = 3;
