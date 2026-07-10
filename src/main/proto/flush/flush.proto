@@ -2,7 +2,6 @@ syntax = "proto3";
 package life;
 
 import "flush/minigame/common/stats.proto";
-import "heartbeat/heartbeat.proto";
 import "flush/minigame/survival_games_player_flush.proto";
 import "google/protobuf/timestamp.proto";
 
