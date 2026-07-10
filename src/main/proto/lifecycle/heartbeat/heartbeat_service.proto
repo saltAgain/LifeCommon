@@ -1,7 +1,7 @@
 syntax = "proto3";
 package life;
 
-import "heartbeat/heartbeat.proto";
+import "lifecycle/heartbeat/heartbeat.proto";
 
 option java_package = "dev.saltt.common.api.proto";
 option java_multiple_files = true;

@@ -9,6 +9,7 @@ option java_multiple_files = true;
 message SubHeartbeatMessage {
   string       match_id = 1;
   LifeGameType game_type = 2;
-  repeated string players = 3;       //uuid
-  GameStatus   status = 4;
+  repeated string connected_player_ids = 3;
+  repeated string reserved_player_ids = 4;
+  GameStatus   status = 5;
 }

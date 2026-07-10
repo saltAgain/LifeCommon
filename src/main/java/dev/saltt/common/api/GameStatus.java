@@ -8,5 +8,7 @@ public enum GameStatus {
     ENDED,
 
     SERVER_LOADING,
-    SERVER_CLOSING
+    SERVER_CLOSING,
+
+    SERVER_CRASHING
 }
