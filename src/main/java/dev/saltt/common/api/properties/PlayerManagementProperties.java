@@ -1,4 +1,4 @@
-package dev.saltt.common.api.propaties;
+package dev.saltt.common.api.properties;
 
 import java.nio.charset.StandardCharsets;
 

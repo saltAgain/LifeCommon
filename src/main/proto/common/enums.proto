@@ -10,6 +10,11 @@ enum LifeGameType {
   SURVIVAL_GAMES = 1;
 }
 
+enum ServerRegion {
+  REGION_UNSPECIFIED = 0;
+  NORTH_AMERICA = 1;
+}
+
 enum GameStatus {
   GAME_STATUS_UNSPECIFIED = 0;   // "unset" default — kept as the sentinel
   SERVER_LOADING = 1;
